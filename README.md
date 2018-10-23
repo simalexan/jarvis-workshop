@@ -20,7 +20,7 @@ The minimum is to complete the Alexa Skill, Application Repository, Comprehend.
 
 ### 1 Alexa Skill Tasks
 
-You can find more details in the [/alexa](/alexa) folder.
+You can find more details in the [/alexa-skill](/alexa-skill) folder.
 
 ### 2 Application Repository Tasks
 
