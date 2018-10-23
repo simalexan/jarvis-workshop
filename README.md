@@ -20,22 +20,22 @@ The minimum is to complete the Alexa Skill, Application Repository, Comprehend.
 
 ### 1 Alexa Skill Tasks
 
-You can find more details in the `/alexa` folder.
+You can find more details in the [/alexa](/alexa) folder.
 
 ### 2 Application Repository Tasks
 
-You can find more details in the `/app-repo` folder.
+You can find more details in the [/app-repo](/app-repo) folder.
 
 ### 3 Comprehend Tasks
 
-You can find more details in the `/comprehend` folder.
+You can find more details in the [/comprehend](/comprehend) folder.
 
 ### 4 DynamoDB Tasks
 
-You can find more details in the `/dynamodb` folder.
+You can find more details in the [/dynamodb](/dynamodb) folder.
 
 ### 5 Lex Tasks
 
-You can find more details in the `/lex` folder.
+You can find more details in the [/lex](/lex) folder.
 
 ## Useful links
