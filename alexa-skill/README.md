@@ -14,3 +14,6 @@ You will need to have:
 4. An Intent to start working on an existing application - (optional)
 5. An Intent to stop working on the application - (optional)
 6. An Intent to list existing applications - (optional)
+7. An Intent to list current application services - (optional)
+
+Each of the tasks are more detailed inside their corresponding folders here.
