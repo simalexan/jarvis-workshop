@@ -39,7 +39,8 @@ You can find more details in the [/app-repo](/app-repo) folder.
 Comprehend tasks are the core of your application. They are focused on creating methods to interact with the AWS API for the Comprehend and to do further custom analysis and combinations needed for detecting which serverless components to use.
 
 **Difficulty**: *Hard*
-Advice: If possible, develop it in a pair-programming fashion
+
+*Hint*: *If possible, develop it in a pair-programming fashion*
 
 You can find more details in the [/comprehend](/comprehend) folder.
 
