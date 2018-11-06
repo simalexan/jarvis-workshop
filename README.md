@@ -60,4 +60,10 @@ Lex tasks are focused on building methods to interact with Lex AWS API, to enabl
 
 You can find more details in the [/lex](/lex) folder.
 
+### 6 Final task: connect all services together
+
+At this point, your team will need to connect all services you built.
+
+**Difficulty**: *Medium to Hard*
+
 ## Useful links
