@@ -24,7 +24,7 @@ Create another intent with following values:
 
 ### 7.2 - Create the intent handler inside your Lambda function
 
-TBA
+At this point you'll not be able to store and read values from the Dynamo DB, it's enough if you are able to recognize this intent and answer to the user. Also, be ready to connect with Dynamo DB service and send the required data.
 
 ## Tips
 

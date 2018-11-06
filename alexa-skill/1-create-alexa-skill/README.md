@@ -6,7 +6,7 @@ A journey of a thousand miles begins with a single step. The first step of Alexa
 
 Create an Alexa Skill in your Alexa Developer console. Our suggested skill invocation name is _Jarvis_, but feel free to be creative.
 
-Your skill can be very simple at this point. It can just say "hello" when you start it. But to do so you'll also need to add some code 😊
+Your skill can be simple at this point. It can just say "hello" when you start it. But to do so you'll also need to add some code 😊
 
 ## Tips
 
