@@ -1,23 +1,41 @@
 # 7 - Create an intent to list currently developed application services
 
+It's hard to remember all services that you added, especially if you work on the app for a long time. Let's add an intent that will allow Alexa to list all added services.
+
+## Task
+
+This task contains following two subtasks:
+
 1. Create the intent in the console / or in the ASK model
 2. Create the intent handler inside the code
 
-## 7.1 - Create intent in the console
+### 7.1 - Create the intent
 
-### Name
+Create another intent with following values:
 
-ListAppServices
+- **Intent name:** ListAppServices
+- **Slots:** 
+  - None
+- **Sample utterances:**
+  - to list services
+  - to list current services
+  - list my services
+  - list services
 
-### Slots
+### 7.2 - Create the intent handler inside your Lambda function
 
-None.
+TBA
 
-### Utterances
+## Tips
 
-- to list services
-- to list current services
-- list my services
-- list services
+Here are a few tips to help you with this task:
 
-## 7.2 - Create the intent handler inside your Lambda function
+- You can find a guide for creating Intents, Utterances, and Slots here: [link](https://developer.amazon.com/docs/custom-skills/create-intents-utterances-and-slots.html).
+
+------
+
+If you are done or you need more info here are some of the shortcuts to help you out:
+
+- [All done? Help your team with other tasks!](../../)
+- [Back to the task list](../)
+
