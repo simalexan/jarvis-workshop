@@ -9,7 +9,7 @@ This task contains following two subtasks:
 1. Create the intent in the console / or in the ASK model
 2. Create the intent handler inside the code
 
-### 2.1 - Create intent
+### 2.1 - Create the intent
 
 You need to add an intent to your Alexa skill. You can do this via Amazon Alexa Console, or using ASK model, both ways are equally valid, feel free to pick the one that is easier for you.
 
@@ -24,7 +24,7 @@ Each intent requires name, slots and some sample utterances, here are the sugges
   - to start a new app
   - to start a new application
 
-###2.2 - Create the intent handler inside your Lambda function
+### 2.2 - Create the intent handler inside your Lambda function
 
 TBA
 

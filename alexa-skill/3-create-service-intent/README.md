@@ -9,7 +9,7 @@ This task contains following two subtasks:
 1. Create the intent in the console / or in the ASK model
 2. Create the intent handler inside the code
 
-### 2.1 - Create intent
+### 3.1 - Create the intent
 
 Create another intent with following values:
 
