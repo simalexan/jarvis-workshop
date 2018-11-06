@@ -1,0 +1,19 @@
+{
+  "name": "jarvis-workshop",
+  "version": "1.0.0",
+  "description": "Ever dreamed making a voice assitant capable of helping you out in your work as a developer? Or a voice assistant that would be able to develop quick prototypes or even complete applications?",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simalexan/jarvis-workshop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simalexan/jarvis-workshop/issues"
+  },
+  "homepage": "https://github.com/simalexan/jarvis-workshop#readme"
+}
