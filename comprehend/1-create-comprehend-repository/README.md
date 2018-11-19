@@ -1,4 +1,4 @@
-# 1 - Create a Comprehed Repository file
+# 1 - Create a Comprehend Repository file
 
 ## Description
 
