@@ -11,7 +11,7 @@ This task contains following two subtasks:
 
 ### 2.1 - Create the intent
 
-You need to add an intent to your Alexa skill. You can do this via Amazon Alexa Console, or using ASK model, both ways are equally valid, feel free to pick the one that is easier for you.
+You need to add an intent to your Alexa skill. You can do this via Amazon Alexa Console, or using ASK model, both ways are OK, feel free to pick the one that is easier for you.
 
 Each intent requires name, slots and some sample utterances, here are the suggested ones for your first intent:
 
@@ -26,7 +26,9 @@ Each intent requires name, slots and some sample utterances, here are the sugges
 
 ### 2.2 - Create the intent handler inside your Lambda function
 
-TBA
+At this point, your skill will not create a serverless app. Instead, you just need to be able to recognize this intent and to answer to the user.
+
+In the second part of the workshop you'll connect this intent with the other services that your team is working on.
 
 ## Tips
 

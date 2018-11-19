@@ -27,7 +27,9 @@ Create another intent with following values:
 
 ### 3.2 - Create the intent handler inside your Lambda function
 
-TBA
+Again, your skill will not create a service. Instead, you just need to be able to recognize this intent and answer to the user.
+
+In the second part of the workshop you'll connect this intent with the other services that your team is working on.
 
 ## Tips
 
