@@ -10,11 +10,11 @@ This workshop is team based. Each team has a goal of building their own serverle
 
 The workshop is organized into several task sections:
 
-- Alexa Skill (in the `/alexa`)
-- Application Repository (in the `/app-repo`)
-- Comprehend (in the `/comprehend`)
-- DynamoDB (in the `/dynamodb`)
-- Lex (in the `/lex`)
+- Alexa Skill (in the [`/1-alexa-skill`](/1-alexa-skill))
+- Application Repository (in the [`/2-app-repo`](/2-app-repo))
+- Comprehend (in the [`/3-comprehend`](/3-comprehend))
+- DynamoDB (in the [`/4-dynamodb`](/4-dynamodb))
+- Lex (in the [`/5-lex`](/5-lex))
 
 The minimum is to complete the Alexa Skill, Application Repository, Comprehend.
 
@@ -24,7 +24,7 @@ These tasks are focused on building the necessary Alexa skill intents that are g
 
 **Difficulty**: *Medium*
 
-You can find more details in the [/alexa-skill](/alexa-skill) folder.
+You can find more details in the [/1-alexa-skill](/1-alexa-skill) folder.
 
 ### 2 Application Repository Tasks
 
@@ -32,7 +32,7 @@ Application Repository tasks are focused on creating methods to interact with th
 
 **Difficulty**: *Easy*
 
-You can find more details in the [/app-repo](/app-repo) folder.
+You can find more details in the [/2-app-repo](/2-app-repo) folder.
 
 ### 3 Comprehend Tasks
 
@@ -42,7 +42,7 @@ Comprehend tasks are the core of your application. They are focused on creating 
 
 *Hint*: *If possible, develop it in a pair-programming fashion*
 
-You can find more details in the [/comprehend](/comprehend) folder.
+You can find more details in the [/3-comprehend](/3-comprehend) folder.
 
 ### 4 DynamoDB Tasks
 
@@ -50,7 +50,7 @@ These tasks are focused on storing the created application and their correspondi
 
 **Difficulty**: *Easy*
 
-You can find more details in the [/dynamodb](/dynamodb) folder.
+You can find more details in the [/4-dynamodb](/4-dynamodb) folder.
 
 ### 5 Lex Tasks (Optional)
 
@@ -58,7 +58,7 @@ Lex tasks are focused on building methods to interact with Lex AWS API, to enabl
 
 **Difficulty**: *Medium to Hard*
 
-You can find more details in the [/lex](/lex) folder.
+You can find more details in the [/5-lex](/5-lex) folder.
 
 ### 6 Final task: connect all services together
 
