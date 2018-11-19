@@ -8,5 +8,5 @@ Create a method within your DynamoDB repository that's responsible to list the s
 
 If you are done or you need more info here are some of the shortcuts to help you out:
 
-- [All done? Help your team with other tasks!](../../)
+- [All done? Help your team with other tasks!](../../../../)
 - [Back to the task list](../)

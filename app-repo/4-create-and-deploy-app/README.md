@@ -42,5 +42,5 @@ It has only three parameters: ChangeSetName, StackName, which is StackId.
 
 If you are done or you need more info here are some of the shortcuts to help you out:
 
-- [All done? Help your team with other tasks!](../../)
+- [All done? Help your team with other tasks!](../../../../)
 - [Back to the task list](../)
