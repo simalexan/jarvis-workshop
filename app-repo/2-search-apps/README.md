@@ -19,3 +19,10 @@ Result: _Should return an array of Applications_.
 ### Hint
 
 The method you should focus on is **serverlessapplicationrepository.listApplications**.
+
+----
+
+If you are done or you need more info here are some of the shortcuts to help you out:
+
+- [Next task](../3-get-app)
+- [Back to the task list](../)

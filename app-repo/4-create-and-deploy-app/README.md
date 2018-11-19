@@ -10,7 +10,9 @@
 
 [Direct link to AWS Serverless Application Repository SDK Documentation](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/ServerlessApplicationRepository.html)
 
-## Method Signature
+## Methods Signature
+
+### AppRepo - createCFChangeSet
 
 Name: **createCFChangeSet**
 
@@ -18,7 +20,27 @@ Parameters: **appId**, **stackName**
 
 Result: _Should return the response along with the stackName that you passed_.
 
+### CloudFormation - executeCFSet
+
+Name: **executeCFSet**
+
+Parameters: **cloudformation**, **changeSetId**, **stackId**
+
+Result: _Should return the response_.
+
 ### Hint
 
-The method you should focus on is **serverlessapplicationrepository.createCloudFormationChangeSet**.
+The methods you should focus on are: 
+
+**serverlessapplicationrepository.createCloudFormationChangeSet**
 It has only three parameters: ApplicationId, ParameterOverrides (which should be at the moment, just an empty array) and StackName.
+
+**cloudformation.executeChangeSet**
+It has only three parameters: ChangeSetName, StackName, which is StackId.
+
+----
+
+If you are done or you need more info here are some of the shortcuts to help you out:
+
+- [All done? Help your team with other tasks!](../../)
+- [Back to the task list](../)

@@ -64,3 +64,10 @@ If there **is** a `nextAction`, filter all the `potentialInputs` where the outpu
 ## That's it
 
 You're done! Try it out!
+
+----
+
+If you are done or you need more info here are some of the shortcuts to help you out:
+
+- [All done? Help your team with other tasks!](../../)
+- [Back to the task list](../)

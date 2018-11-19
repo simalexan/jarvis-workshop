@@ -39,4 +39,3 @@ If you are done or you need more info here are some of the shortcuts to help you
 
 - [Next task](../7-list-current-app-services-intent)
 - [Back to the task list](../)
-

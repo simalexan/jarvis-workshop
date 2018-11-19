@@ -29,3 +29,10 @@ Map through the `verbs` array and based on the verb position in the sentence, ge
 Then, you needs an array of inputs and outputs. An element of that array represents an input or output, and is an object containing an adpositive and its belonging noun. Example: from the phrase `from database`, the adpositive would be `from` and the object is `database`. This will help you get all needed inputs and outputs from your sentence.
 
 Map through the `adpositions` array and based on the adposition position in the sentence, get the first noun that is right after the adposition.
+
+----
+
+If you are done or you need more info here are some of the shortcuts to help you out:
+
+- [Next task](../4-construct-unix-process)
+- [Back to the task list](../)

@@ -20,3 +20,10 @@ Result: _Should return an array of the syntax tokens_.
 
 The method you should focus on is **comprehend.detectSyntax**.
 It has only two parameters: Language and Text.
+
+----
+
+If you are done or you need more info here are some of the shortcuts to help you out:
+
+- [Next task](../3-process-syntax-query-action-groups)
+- [Back to the task list](../)
