@@ -10,8 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/simalexan/jarvis-workshop.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Aleksandar Simovic <alexander.simovic@gmail.com>",
+  "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/simalexan/jarvis-workshop/issues"
   },
