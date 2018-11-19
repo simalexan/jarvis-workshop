@@ -15,6 +15,7 @@ The workshop is organized into several task sections:
 - Comprehend (in the [`/3-comprehend`](/3-comprehend))
 - DynamoDB (in the [`/4-dynamodb`](/4-dynamodb))
 - Lex (in the [`/5-lex`](/5-lex))
+- Connect It all (in the [`/6-connect-it-all`](/6-connect-it-all))
 
 The minimum is to complete the Alexa Skill, Application Repository, Comprehend.
 
@@ -64,6 +65,8 @@ You can find more details in the [/5-lex](/5-lex) folder.
 
 At this point, your team will need to connect all services you built.
 
-**Difficulty**: *Medium to Hard*
+You can find more details in the [/6-connect-it-all](/6-connect-it-all) folder.
+
+**Difficulty**: *Medium*
 
 ## Useful links
