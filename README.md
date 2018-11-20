@@ -70,3 +70,12 @@ You can find more details in the [/6-connect-it-all](/6-connect-it-all) folder.
 **Difficulty**: *Medium*
 
 ## Useful links
+
+- [Handling Requests sent by Alexa](https://developer.amazon.com/docs/custom-skills/handle-requests-sent-by-alexa.html)
+- [Comprehend SDK](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/Comprehend.html)
+- [Serverless Application Repository SDK](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/ServerlessApplicationRepository.html)
+- [DynamoDB SDK](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html)
+
+
+
+(c) Copyright 2018 Aleksandar Simovic, All Rights Reserved.
