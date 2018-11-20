@@ -16,7 +16,7 @@ If you want to focus on completing it, we suggest that while you're doing the Cl
 
 You will need to have:
 
-1. [Create a CloudFormation template file which will hold your AWS infrastructure](./1-create-template)
+1. [Create or Update the SAM template file](./1-create-template)
 2. [Connect your your Add service Alexa Intent to Comprehend](./2-connect-alexa-to-comprehend)
 3. [Connect the resulting Input Output groups to your AWS Serverless App Repo Tasks](./3-connect-to-app-repo)
 4. [Connect your Alexa Intents to DynamoDB](./4-connect-to-dynamodb) (optional task)
