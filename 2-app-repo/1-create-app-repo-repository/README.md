@@ -4,7 +4,7 @@
 
 Create a file named `sar-repository` which will handle the interaction between your logic and Serverless Application Repository.
 
-You'll need to import AWS-SDK and get it locally if you want to try out.
+You'll need to import AWS-SDK as a development dependency and get it locally if you want to try out.
 
 ----
 

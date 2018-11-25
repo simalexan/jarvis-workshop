@@ -4,7 +4,7 @@
 
 - Create a method that's responsible for calling Serverless Application Repository API and creating a CloudFormation Change Set with the AppId
 
-- Create a method's responsible for executing the CloudFormationChange set, created by the previous method
+- Import and instantiate CloudFormation using the AWS-SDK and then create a method's responsible for executing the CloudFormationChange set, created by the previous method
 
 ## Read the Serverless App Repo SDK
 
