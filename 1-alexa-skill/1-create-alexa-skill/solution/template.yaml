@@ -5,7 +5,7 @@ Description: Alexa app
 # More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
 Globals:
     Function:
-        Timeout: 3
+        Timeout: 30
 
 Parameters:
     # Your skill ID which can be found in the Amazon developer console where you create the skill.

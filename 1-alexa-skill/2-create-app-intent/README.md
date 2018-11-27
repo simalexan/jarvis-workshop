@@ -15,7 +15,7 @@ You need to add an intent to your Alexa skill. You can do this via Amazon Alexa 
 
 Each intent requires name, slots and some sample utterances, here are the suggested ones for your first intent:
 
-- **Intent name:** Create App
+- **Intent name:** CreateApp
 - **Slots:** None
 - **Sample utterances:**
   - to create an application
