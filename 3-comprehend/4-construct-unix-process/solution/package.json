@@ -1,0 +1,14 @@
+{
+  "name": "serverless-jarvis",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Aleksandar Simovic <alexander.simovic@gmail.com>",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "aws-sdk": "^2.282.1"
+  }
+}
