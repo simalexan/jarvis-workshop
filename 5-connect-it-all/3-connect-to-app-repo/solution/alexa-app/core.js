@@ -41,8 +41,6 @@ function divideProcessElements(actionGroups, inputOutputs) {
     input: null, process: null, output: null
   };
 
-  let previousAction, nextAction;
-
   let processes = actionGroups.map((action, index) => {
     nextAction = actionGroups[index];
 
