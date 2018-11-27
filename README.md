@@ -14,8 +14,7 @@ The workshop is organized into several task sections:
 - Application Repository (in the [`/2-app-repo`](/2-app-repo))
 - Comprehend (in the [`/3-comprehend`](/3-comprehend))
 - DynamoDB (in the [`/4-dynamodb`](/4-dynamodb))
-- Lex (in the [`/5-lex`](/5-lex))
-- Connect It all (in the [`/6-connect-it-all`](/6-connect-it-all))
+- Connect It all (in the [`/5-connect-it-all`](/5-connect-it-all))
 
 The minimum is to complete the Alexa Skill, Application Repository, Comprehend.
 
@@ -45,7 +44,7 @@ Comprehend tasks are the core of your application. They are focused on creating 
 
 You can find more details in the [/3-comprehend](/3-comprehend) folder.
 
-### 4 DynamoDB Tasks
+### 4 DynamoDB Tasks (Optional)
 
 These tasks are focused on storing the created application and their corresponding services information to their DynamoDB tables for further work. These tasks should build methods for saving and getting created application information and saving and getting created service information (such as name, appId, input, process, output) which are interacting with the AWS API for DynamoDB.
 
@@ -53,19 +52,11 @@ These tasks are focused on storing the created application and their correspondi
 
 You can find more details in the [/4-dynamodb](/4-dynamodb) folder.
 
-### 5 Lex Tasks (Optional)
-
-Lex tasks are focused on building methods to interact with Lex AWS API, to enable other web or chatbot clients to build applications and services through text or voice. Tasks are similar to the Alexa ones, but require more experience.
-
-**Difficulty**: *Medium to Hard*
-
-You can find more details in the [/5-lex](/5-lex) folder.
-
-### 6 Final task: connect all services together
+### 5 Final task: connect all services together
 
 At this point, your team will need to connect all services you built.
 
-You can find more details in the [/6-connect-it-all](/6-connect-it-all) folder.
+You can find more details in the [/5-connect-it-all](/5-connect-it-all) folder.
 
 **Difficulty**: *Medium*
 
@@ -75,7 +66,5 @@ You can find more details in the [/6-connect-it-all](/6-connect-it-all) folder.
 - [Comprehend SDK](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/Comprehend.html)
 - [Serverless Application Repository SDK](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/ServerlessApplicationRepository.html)
 - [DynamoDB SDK](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html)
-
-
 
 (c) Copyright 2018 Aleksandar Simovic, All Rights Reserved.
