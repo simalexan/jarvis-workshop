@@ -8,7 +8,7 @@ Create a file that's responsible for handling all interactions with Comprehend
 
 Create a file named `comprehend-repository` which will handle the interaction between your logic and Amazon Comprehend.
 
-You'll need to import AWS-SDK and get it locally if you want to try out.
+You'll need to import the AWS-SDK and get it locally if you want to try out. And also you will need to instantiate Comprehend from  AWS SDK.
 
 ----
 
