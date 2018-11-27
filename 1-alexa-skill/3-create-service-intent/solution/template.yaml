@@ -1,0 +1,40 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Alexa app
+    
+# More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
+Globals:
+    Function:
+        Timeout: 30
+
+Parameters:
+    # Your skill ID which can be found in the Amazon developer console where you create the skill.
+    AlexaAppId:
+        Type: String
+        Description: An Alexa skill App ID
+
+
+Resources:
+
+    AlexaFunction:
+        Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+        Properties:
+            CodeUri: alexa-app/
+            Handler: lambda.handler
+            Runtime: nodejs8.10
+            Environment: # More info about Env Vars: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#environment-object
+                Variables:
+                    ALEXA_APP_ID: !Ref AlexaAppId
+            Events:
+                Alexa:
+                    Type: AlexaSkill # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#alexaskill
+
+Outputs:
+
+    AlexaFunction:
+        Description: "Alexa Skill Lambda Function ARN"
+        Value: !GetAtt AlexaFunction.Arn
+
+    AlexaFunctionIamRole:
+        Description: "Implicit IAM Role created for Alexa Skill function"
+        Value: !GetAtt AlexaFunctionRole.Arn
