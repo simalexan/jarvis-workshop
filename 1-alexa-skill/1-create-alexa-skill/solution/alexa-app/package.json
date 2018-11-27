@@ -6,5 +6,8 @@
   "scripts": {
     "test": "jest --colors"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "alexa-sdk": "^1.0.25"
+  }
 }
