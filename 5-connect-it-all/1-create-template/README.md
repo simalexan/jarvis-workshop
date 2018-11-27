@@ -4,7 +4,7 @@ Again, congratulations on completeing the previous tasks! You've finished with t
 
 ## Goal
 
-Create / Update the SAM template file that's responsible for deploying your application
+Update the SAM template file that's responsible for deploying your Alexa application and enable it to run other parts of your code
 
 ## Tasks
 
