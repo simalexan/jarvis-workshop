@@ -1,0 +1,10 @@
+{
+  "name": "alexa-app",
+  "version": "1.0.0",
+  "description": "Jarvis skill",
+  "main": "lambda.js",
+  "scripts": {
+    "test": "jest --colors"
+  },
+  "license": "MIT"
+}
