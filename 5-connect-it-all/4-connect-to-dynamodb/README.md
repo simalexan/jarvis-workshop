@@ -47,12 +47,9 @@ Congratulations!
 
 That's it, this is done! You can try out all of your skills now!
 
-In case you want to add the Lex connection, proceed to the next task. If not, congratulations, you've finished the workshop!
-
 ----
 
 If you are done or you need more info here are some of the shortcuts to help you out:
 
-- [Next to connect Lex](../5-connect-lex-to-comprehend)
-- [If you don't have Lex, you're done!](../../../../)
+- [Congratulations, you're done!](../../../../)
 - [Back to the task list](../)
