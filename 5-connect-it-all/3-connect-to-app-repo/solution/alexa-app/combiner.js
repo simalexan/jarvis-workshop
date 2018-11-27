@@ -1,4 +1,4 @@
-const sar = require('../sar-repository'); // import sar-repository
+const sar = require('./sar-repository'); // import sar-repository
 
 module.exports = {
   findComponentByProcess: function(input, process, output) {

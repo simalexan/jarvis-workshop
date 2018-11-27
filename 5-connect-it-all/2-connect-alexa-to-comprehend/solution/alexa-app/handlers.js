@@ -26,7 +26,8 @@ const handlers = {
       this.response.speak('Search Query is missing');
     } else {
       let foundAppName,
-        input, process, output, stackName;
+        input, process, output, stackName,
+        query = intentObj.slots.serviceQuery.value;
 
       core(query).then(processElements => {
 

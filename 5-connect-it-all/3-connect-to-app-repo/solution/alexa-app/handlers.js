@@ -26,7 +26,8 @@ const handlers = {
       this.response.speak('Search Query is missing');
     } else {
       let foundAppName,
-        input, process, output, stackName;
+        input, process, output, stackName,
+        query = intentObj.slots.serviceQuery.value;
 
       core(query).then(processElements => {
 
@@ -37,19 +38,41 @@ const handlers = {
         console.log(input, process, output);
         return combiner.findComponentByProcess(input, process, output);
       }).then(foundApp => {
+
+        let promise;
         
         if (foundApp && foundApp.name) {
           foundAppName = foundApp.name;
-          this.response.speak(`I've found an app named ${foundApp.name}!`);
+          promise = createService(foundComponent.ApplicationId);
         } else {
+          promise = Promise.resolve();
           this.response.speak(`There's no apps that fit your inquiry!`);
         }
-        
-      })
+        return promise;
+      }).then(reply => {
+        this.response.speak(`I've found an app named ${foundApp.name} and am deploying it right now, should be available in a minute or two!`);
+      });
       
     }
     this.emit(':responseReady');
   }
 };
+
+function createService(appId) {
+  return new Promise((resolve, reject) => {
+    SAR.getAppById(appId)
+    .then(response => {
+      return SAR.createCFChangeSet(appId, '11111-dynamodb-display-stack');
+    }).then(cfResponse => {
+      setTimeout(function () {
+        executeCFSet(cloudformation, cfResponse.ChangeSetId, cfResponse.StackId, function(){});
+      }, 5000);
+      resolve(cfResponse);
+    })
+    .catch(err => {
+      reject(err);
+    });
+  });
+}
 
 module.exports = handlers;
