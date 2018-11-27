@@ -4,10 +4,10 @@ module.exports = {
   findComponentByProcess: function(input, process, output) {
     return sar.searchApps(`${input} ${process} ${output}`).then(apps => {
       const appsContainingElements = apps.filter(app => {
-        const hasInput = input ? app.Labels.includes(input.toLowerCase()) : true;
-        const hasOutput = output ? app.Labels.includes(output.toLowerCase()) : true;
+        const hasInput = input ? app.labels.includes(input.toLowerCase()) : true;
+        const hasOutput = output ? app.labels.includes(output.toLowerCase()) : true;
         return hasInput && hasOutput &&
-          (app.Labels.includes(process.toLowerCase()) || app.Description.includes(output.toLowerCase()));
+          (app.labels.includes(process.toLowerCase()) || app.description.includes(output.toLowerCase()));
       });
       return appsContainingElements[0]; // return the first one that's most matching
     }).catch(err => {
