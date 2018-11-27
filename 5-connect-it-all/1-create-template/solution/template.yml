@@ -1,0 +1,77 @@
+AWSTemplateFormatVersion: 2010-09-09
+Transform: AWS::Serverless-2016-10-31
+
+Resources:
+  RequestReceiver:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: index.handler
+      Runtime: nodejs6.10
+      Timeout: 10
+      Environment:
+        Variables:
+          PROJECTS_TABLE: 'jarvis-apps'
+          PROJECTS_PKEY: 'appId'
+          PROCESS_TABLE: 'jarvis-apps-processes'
+          PROCESS_PKEY: 'processId'
+      Policies:
+        - AWSLambdaExecute
+        - Version: '2012-10-17'
+          Statement:
+            - Effect: Allow
+              Action:
+                - serverlessrepo:*
+                - cloudformation:*
+                - iam:CreateRole
+                - iam:GetRole
+                - iam:PassRole
+                - iam:DeleteRole
+                - iam:PutRolePolicy
+                - iam:AttachRolePolicy
+                - iam:DetachRolePolicy
+                - iam:DeleteRolePolicy
+                - lambda:*
+                - dynamodb:*
+                - apigateway:*
+                - comprehend:*
+              Resource: '*'
+      Events:
+        SamBuilderApi:
+          Type: Api
+          Properties:
+            Path: /build
+            Method: GET
+  ApplicationsTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: 'jarvis-apps'
+      AttributeDefinitions:
+        -
+          AttributeName: appId
+          AttributeType: S
+      KeySchema:
+        -
+          AttributeName: appId
+          KeyType: HASH
+      ProvisionedThroughput:
+        ReadCapacityUnits: 1
+        WriteCapacityUnits: 1
+      StreamSpecification:
+        StreamViewType: NEW_AND_OLD_IMAGES
+  ApplicationProcessesTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: 'jarvis-apps-processes'
+      AttributeDefinitions:
+        -
+          AttributeName: processId
+          AttributeType: S
+      KeySchema:
+        -
+          AttributeName: processId
+          KeyType: HASH
+      ProvisionedThroughput:
+        ReadCapacityUnits: 1
+        WriteCapacityUnits: 1
+      StreamSpecification:
+        StreamViewType: NEW_AND_OLD_IMAGES

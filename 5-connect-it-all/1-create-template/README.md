@@ -25,7 +25,7 @@ You will need to add two policies:
 2. A custom policy statement that allows:
     - `serverlessrepo:*`
     - `cloudformation:*`
-    - `iam:CreateRole` - this and the following IAM roles seem a bit "unsafe" to add them, but your Lambda should be able to create Component Roles and Policies, to enable them to work.
+    - `iam:CreateRole` - this and the following IAM roles are a bit "unsafe", but your Lambda must be able to create Component Roles and Policies, to enable them to work.
     - `iam:GetRole`
     - `iam:PassRole`
     - `iam:DeleteRole`
@@ -47,11 +47,11 @@ That's it! If you haven't done any DynamoDB tasks, go to the:
 
 ### Adding DynamoDB template section
 
-If you've completed your DynamoDB tasks, you have just a little bit more work to do, in case you haven't done it before:
+**If you've completed your DynamoDB tasks**, you have just a little bit more work to do, in case you haven't done it before:
 
 #### Add Applications DynamoDB table to the SAM template
 
-Specify an Applications DynamoDB table (`AWS::DynamoDB::Table` or SAM's SimpleTable). Define its `Properties` such as `TableName`, `AttributeDefinitions`, `KeySchema`, `ProvisionedThroughput` and `StreamSpecification`. 
+Specify an Applications DynamoDB table (`AWS::DynamoDB::Table` or SAM's SimpleTable). Define its `Properties` such as `TableName`, `AttributeDefinitions`, `KeySchema`, `ProvisionedThroughput` and `StreamSpecification`.
 
 #### Add Application Processes DynamoDB table to the SAM template
 
