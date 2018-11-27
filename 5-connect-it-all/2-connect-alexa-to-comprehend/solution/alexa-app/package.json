@@ -8,6 +8,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "alexa-sdk": "^1.0.25"
+    "alexa-sdk": "^1.0.25",
+    "aws-sdk": "^2.363.0",
+    "minimal-request-promise": "^1.5.0"
   }
 }

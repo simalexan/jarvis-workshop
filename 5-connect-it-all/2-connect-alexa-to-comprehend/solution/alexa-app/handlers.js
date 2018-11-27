@@ -1,7 +1,7 @@
 'use strict';
 
-const core = require('../core'),
-  combiner = require('../combiner');
+const core = require('./core'),
+  combiner = require('./combiner');
 
 const handlers = {
   'LaunchRequest': function () {
