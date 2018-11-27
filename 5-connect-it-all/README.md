@@ -20,6 +20,5 @@ You will need to have:
 2. [Connect your your Add service Alexa Intent to Comprehend](./2-connect-alexa-to-comprehend)
 3. [Connect the resulting Input Output groups to your AWS Serverless App Repo Tasks](./3-connect-to-app-repo)
 4. [Connect your Alexa Intents to DynamoDB](./4-connect-to-dynamodb) (optional task)
-5. [Connect your Lex handler to the Comprehend](./5-connect-lex-to-comprehend) (optional task)
 
 Each of the tasks are more detailed inside their corresponding folders here.
