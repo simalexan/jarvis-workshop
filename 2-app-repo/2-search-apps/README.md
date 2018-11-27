@@ -2,23 +2,27 @@
 
 ## Description
 
-Create a method that's responsible for calling Serverless Application Repository API and returning the result
+Create a method that's responsible for searching the AWS Serverless Application Repository and returning the result.
+
+**Important**: This functionality exists for AWS Serverless Application Repository, but it's not documented, as it is experimental as well. For that reason, you will have to call a wrapped API and just pass the search term.
 
 ## Read the Serverless App Repo SDK
 
-[Direct link to AWS Serverless Application Repository SDK Documentation](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/ServerlessApplicationRepository.html)
+The Wrapper API URL is: [https://eqhtwlzt79.execute-api.us-east-1.amazonaws.com/Prod/search?query=YOUR_SEARCH_PHRASE](https://eqhtwlzt79.execute-api.us-east-1.amazonaws.com/Prod/search?query=YOUR_SEARCH_PHRASE)
 
 ## Method Signature
 
-Name: **listApps**
+Name: **searchApps**
 
-No parameters
+Parameters: **searchTerm**
 
 Result: _Should return an array of Applications_.
 
 ### Hint
 
-The method you should focus on is **serverlessapplicationrepository.listApplications**.
+Since you will be calling an external API from your code, you will need to use an HTTP request library. If you're using Node.js, we recommend `minimal-request-promise` as its free from third-party dependencies, and has Promise support. If you decide to use it, be sure to parse the returned HTTP request body into JSON, by using `JSON.parse`. If not, your HTTP library may be using it already.
+
+After you invoke it, the Search Apps API will return an object containing two properties `ApplicationCount` and `Applications`. Just return the `Applications`, as it is an array containing all of the AWS Serverless Application Repository applications that it found based on your search query.
 
 ----
 
