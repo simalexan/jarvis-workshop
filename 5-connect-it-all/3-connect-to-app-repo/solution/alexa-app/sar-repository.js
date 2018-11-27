@@ -18,7 +18,7 @@ module.exports = {
   searchApps: (searchTerm) => {
     return rp.get(SEARCH_APPS_PATH+searchTerm)
       .then(response => JSON.parse(response.body))
-      .then(body => body.Applications)
+      .then(body => body.applications)
       .catch(error => {
         console.log(error);
         throw error;
