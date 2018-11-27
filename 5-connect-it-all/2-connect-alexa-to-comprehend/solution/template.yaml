@@ -1,0 +1,93 @@
+AWSTemplateFormatVersion: 2010-09-09
+Transform: AWS::Serverless-2016-10-31
+Description: Alexa app
+
+Globals:
+    Function:
+        Timeout: 30
+Parameters:
+    # Your skill ID which can be found in the Amazon developer console where you create the skill.
+    AlexaAppId:
+        Type: String
+        Description: An Alexa skill App ID
+Resources:
+  AlexaFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: alexa-app/
+      Handler: lambda.handler
+      Runtime: nodejs8.10
+      Environment:
+        Variables:
+          ALEXA_APP_ID: !Ref AlexaAppId
+          PROJECTS_TABLE: 'jarvis-apps'
+          PROJECTS_PKEY: 'appId'
+          PROCESS_TABLE: 'jarvis-apps-processes'
+          PROCESS_PKEY: 'processId'
+      Policies:
+        - AWSLambdaExecute
+        - Version: '2012-10-17'
+          Statement:
+            - Effect: Allow
+              Action:
+                - serverlessrepo:*
+                - cloudformation:*
+                - iam:CreateRole
+                - iam:GetRole
+                - iam:PassRole
+                - iam:DeleteRole
+                - iam:PutRolePolicy
+                - iam:AttachRolePolicy
+                - iam:DetachRolePolicy
+                - iam:DeleteRolePolicy
+                - lambda:*
+                - dynamodb:*
+                - apigateway:*
+                - comprehend:*
+              Resource: '*'
+      Events:
+        Alexa:
+          Type: AlexaSkill
+  ApplicationsTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: 'jarvis-apps'
+      AttributeDefinitions:
+        -
+          AttributeName: appId
+          AttributeType: S
+      KeySchema:
+        -
+          AttributeName: appId
+          KeyType: HASH
+      ProvisionedThroughput:
+        ReadCapacityUnits: 1
+        WriteCapacityUnits: 1
+      StreamSpecification:
+        StreamViewType: NEW_AND_OLD_IMAGES
+  ApplicationProcessesTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: 'jarvis-apps-processes'
+      AttributeDefinitions:
+        -
+          AttributeName: processId
+          AttributeType: S
+      KeySchema:
+        -
+          AttributeName: processId
+          KeyType: HASH
+      ProvisionedThroughput:
+        ReadCapacityUnits: 1
+        WriteCapacityUnits: 1
+      StreamSpecification:
+        StreamViewType: NEW_AND_OLD_IMAGES
+Outputs:
+
+    AlexaFunction:
+        Description: "Alexa Skill Lambda Function ARN"
+        Value: !GetAtt AlexaFunction.Arn
+
+    AlexaFunctionIamRole:
+        Description: "Implicit IAM Role created for Alexa Skill function"
+        Value: !GetAtt AlexaFunctionRole.Arn
